@@ -85,21 +85,21 @@ document.querySelectorAll('.desenvolvedor').forEach(button => {
 
 // Animmação de entrada
 
-const elements = document.querySelectorAll('.main');
-console.log(elements)
-const myObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+// const elements = document.querySelectorAll('.sectionsSite');
+// console.log(elements)
+// const myObserver = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('show');
+//         } else {
+//             entry.target.classList.remove('show');
+//         }
+//     });
+// });
 
-elements.forEach((element) => {
-    myObserver.observe(element);
-});
+// elements.forEach((element) => {
+//     myObserver.observe(element);
+// });
 
 // Sobrescrita do formulário
 const form = document.getElementById('form');
