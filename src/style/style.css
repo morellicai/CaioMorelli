@@ -61,10 +61,8 @@ html{
 .listnav {
     text-decoration: none;
     color: #ffffff;
-
-}
-.listnav:hover{
-    color: #4db8ff;
+    position: relative;
+    display: inline-block;
 }
 /* .listnav::after{
     content "";
@@ -78,6 +76,9 @@ html{
     bottom: 0;
     left: 0;
 } */
+.listnav:hover'{
+    color: #4db8ff;
+}
 .orcamento{
     padding: 15px;
     background-color: #4db8ff;
@@ -162,7 +163,7 @@ main{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.main{
+.sectionsSite{
     filter: blur(15px);
     transform: translateX(-100%);
     transition: all 1s;
