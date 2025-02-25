@@ -50,57 +50,6 @@ document.querySelectorAll('.list-services').forEach(button => {
     });
 });
 
-// function devs(event, type){
-//     event.preventDefault();
-//     const cards = [
-//         "card-eddie",
-//         "card-felipe",
-//         "card-elias",
-//         "card-dmitri",
-//         "card-pedro",
-//         "card-caio"
-//     ];
-//     cards.forEach(cardId => {
-//         const cardElement = document.getElementById(cardId);
-//         cardElement.style.display = (cardId === `card-${type}`) ? "flex" : "none";
-//     });
-// }
-
-// // Adicionando os event listeners de forma genérica
-// document.querySelectorAll('.desenvolvedor').forEach(button => {
-//     button.addEventListener('click', function(event) {
-//         event.preventDefault();
-//     });
-//     button.addEventListener('mouseover', function(event) {
-//         event.preventDefault();
-
-//         document.querySelectorAll('.desenvolvedor').forEach(activeButton => activeButton.classList.remove('ative'));
-
-//         button.classList.add('ative');
-
-//         const type = button.getAttribute('data-type');
-//         devs(event, type);
-//     })
-// });
-
-// Animmação de entrada
-
-const elements = document.querySelectorAll('.sectionsSite');
-console.log(elements)
-const myObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
-
-elements.forEach((element) => {
-    myObserver.observe(element);
-});
-
 // Sobrescrita do formulário
 const form = document.getElementById('form');
 form.addEventListener('submit', (event) => {
@@ -120,3 +69,11 @@ const heroOpened = new IntersectionObserver((entries) => {
     });
 });
 heroOpened.observe(hero);
+
+document.addEventListener("DOMContentLoaded", function() {
+    ScrollReveal().reveal('.sectionsSite', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px'
+    });
+});
