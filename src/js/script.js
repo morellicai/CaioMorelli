@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ScrollReveal().reveal('.sectionsSite', {
         duration: 1000,
         origin: 'left',
-        distance: '100px'
+        distance: '400px'
     });
 });
+
