@@ -585,6 +585,9 @@ header nav .burger:hover i {
   header nav img{
     width: 150px;
   }
+  p {
+    text-align: justify;
+  }
   header nav .links {
     background: rgba(0, 0, 0, 0.518);
     backdrop-filter: blur(10px);
@@ -709,7 +712,9 @@ header nav .burger:hover i {
   h3 {
     font-size: 20px !important;
   }
-
+  header nav img{
+    width: 150px;
+  }
   .about .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -721,7 +726,7 @@ header nav .burger:hover i {
   }
 
   .about p {
-    text-align: center;
+    text-align: start;
     width: 100%;
   }
 
