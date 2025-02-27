@@ -582,7 +582,9 @@ header nav .burger:hover i {
   header nav .burger {
     display: block;
   }
-
+  header nav img{
+    width: 150px;
+  }
   header nav .links {
     background: rgba(0, 0, 0, 0.518);
     backdrop-filter: blur(10px);

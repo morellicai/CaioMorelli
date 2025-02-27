@@ -23,24 +23,27 @@ links.forEach(link => {
 function toggleSidebar(){
     sidebar.classList.toggle("show")
 }
-
-sr.reveal('.container', {
-    duration: 1000,
-    origin: 'left',
-    distance: '400px'
-});
-sr.reveal('.skills', {
-    duration: 1500,
-    origin: 'right',
-    distance: '1500px'
-});
-sr.reveal('.img', {
-    duration: 1000,
-    origin: 'right',
-    distance: '600px'
-})
-sr.reveal('.project', {
-    duration: 1600,
-    origin: 'left',
-    distance: '1500px'
-})
+const janela = window.screen.width
+if(janela >= 768){
+    console.log(janela);
+    sr.reveal('.container', {
+        duration: 1000,
+        origin: 'left',
+        distance: '400px'
+    });
+    sr.reveal('.skills', {
+        duration: 1500,
+        origin: 'right',
+        distance: '1500px'
+    });
+    sr.reveal('.img', {
+        duration: 1000,
+        origin: 'right',
+        distance: '600px'
+    })
+    sr.reveal('.project', {
+        duration: 1600,
+        origin: 'left',
+        distance: '1500px'
+    })
+}
